@@ -2,6 +2,12 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 
+from .db.database import engine
+from .db import models
+
+# Create database tables
+models.Base.metadata.create_all(bind=engine)
+
 app = FastAPI(
     title="Research Desk API",
     description="API for the Multi-Document Research Assistant",
