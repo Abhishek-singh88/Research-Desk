@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 from app.api import documents
+from app.api import search
 
 from .db.database import engine
 from .db import models
@@ -25,6 +26,7 @@ app.add_middleware(
 )
 
 app.include_router(documents.router)
+app.include_router(search.router)
 
 @app.get("/")
 def read_root():
