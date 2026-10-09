@@ -1,5 +1,6 @@
 from sqlalchemy import Column, Integer, String, Text, ForeignKey, DateTime, JSON
 from sqlalchemy.orm import relationship
+from sqlalchemy.dialects.postgresql import TSVECTOR
 from pgvector.sqlalchemy import Vector
 from datetime import datetime
 from app.db.database import Base
@@ -29,8 +30,7 @@ class DocumentChunk(Base):
     embedding = Column(Vector(768)) # Default to 768 (e.g. nomic, text-embedding-004 is 768, OpenAI is 1536)
     
     # In a full setup, we'd define a TSVector column here, but SQLAlchemy doesn't support it perfectly out of the box.
-    # We will handle the tsvector generation mostly via raw SQL/triggers or specific DDL.
-    search_vector = Column(Text, nullable=True) 
+    search_vector = Column(TSVECTOR, nullable=True) 
     created_at = Column(DateTime, default=datetime.utcnow)
 
     document = relationship("Document", back_populates="chunks")
