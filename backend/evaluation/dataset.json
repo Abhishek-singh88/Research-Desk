@@ -1,0 +1,62 @@
+[
+  {
+    "question": "What problem does self-attention solve compared with recurrent networks?",
+    "expected_document": "Attention Is All You Need.pdf"
+  },
+  {
+    "question": "How do BERT and T5 differ in their training objectives?",
+    "expected_document": "BERT.pdf"
+  },
+  {
+    "question": "Explain how LoRA reduces trainable parameters.",
+    "expected_document": "LoRA.pdf"
+  },
+  {
+    "question": "What is the primary architectural innovation of FlashAttention?",
+    "expected_document": "FlashAttention.pdf"
+  },
+  {
+    "question": "How are language models unsupervised multitask learners?",
+    "expected_document": "GPT-2.pdf"
+  },
+  {
+    "question": "What does scaling laws predict about few-shot learning capabilities?",
+    "expected_document": "GPT-3.pdf"
+  },
+  {
+    "question": "What is the dense passage retrieval architecture?",
+    "expected_document": "RAG.pdf"
+  },
+  {
+    "question": "How does text-to-text transfer learning unify NLP tasks?",
+    "expected_document": "T5.pdf"
+  },
+  {
+    "question": "Which paper introduced the scaled dot-product attention mechanism?",
+    "expected_document": "Attention Is All You Need.pdf"
+  },
+  {
+    "question": "What is the rank-decomposition matrix in low-rank adaptation?",
+    "expected_document": "LoRA.pdf"
+  },
+  {
+    "question": "Explain the concept of masked language modeling.",
+    "expected_document": "BERT.pdf"
+  },
+  {
+    "question": "How does IO awareness speed up exact attention?",
+    "expected_document": "FlashAttention.pdf"
+  },
+  {
+    "question": "What are the limitations of purely generative QA models?",
+    "expected_document": "RAG.pdf"
+  },
+  {
+    "question": "How does GPT-3 perform on trivia compared to specialized models?",
+    "expected_document": "GPT-3.pdf"
+  },
+  {
+    "question": "Why is multi-head attention beneficial?",
+    "expected_document": "Attention Is All You Need.pdf"
+  }
+]
