@@ -2,6 +2,8 @@
 
 A high-performance, enterprise-grade Retrieval-Augmented Generation (RAG) system engineered to ingest, index, and synthesize information across multi-hundred-page technical documents, textbooks, and research papers with sub-second retrieval and verifiable page-level citations.
 
+![Research Desk Interface](research.png)
+
 ---
 
 ## Table of Contents
