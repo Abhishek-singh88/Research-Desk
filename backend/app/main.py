@@ -5,11 +5,11 @@ from app.api import documents
 from app.api import search
 from app.api import chat
 
-from .db.database import engine
-from .db import models
+from app.db.database import engine, Base
+from app.models import document, chat_history
 
 # Create database tables
-models.Base.metadata.create_all(bind=engine)
+Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
     title="Research Desk API",
